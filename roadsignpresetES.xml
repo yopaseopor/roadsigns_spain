@@ -4,7 +4,7 @@
 <!--
 roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
 -->
-<sign ref="ES:traffic:sign:dir"  traffic_sign_tag="" name="" es.name="Especificar en qué sentido de la vía de doble sentido está la señal de tráfico: forward (sentido de la vía)   / backward (sentido contrario contraria de la vía)" ca.name="">
+<sign ref="ES:traffic:sign:dir" supplementary="yes" traffic_sign_tag="" name="" es.name="Especificar en qué sentido de la vía de doble sentido está la señal de tráfico: forward (sentido de la vía)   / backward (sentido contrario contraria de la vía)" ca.name="">
         <tag key="direction"  value="$val10"/>
         <parameter ident="val10" input="textfield" prefix="" default="forward" suffix="" field_width="10"/>
 		<tag key="side"  value="$val11"/>
@@ -256,14 +256,14 @@ roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
 <sign ref="ES:p16b" icon="ES_p16b" name="" es.name="Pendiente Máxima de subida" ca.name="Pendiente">
         <tag key="incline" value="$val%"/>
         <parameter input="textfield" name="" es.name="max. incline" ca.name="Pendiente Máxima de subida" type="int" ident="val" default="10" suffix="%" field_width="3"/>
-		<supplementary id="CAT:com:s860"/><!-- Complementaria:Cartell Recordi -->
+		<supplementary id="ES:com:s860"/><!-- Complementaria:Cartell Recordi -->
 		<supplementary id="ES:com:s800"/><!-- Complementaria:A X m. -->
     </sign>
 	
 <sign ref="ES:p16a" icon="ES_p16a" name="" es.name="Pendiente Máxima de bajada" ca.name="Pendiente">
         <tag key="incline" value="-$val%"/>
         <parameter input="textfield" name="" es.name="max. incline" ca.name="Pendiente Máxima de bajada" type="int" ident="val" prefix="-" default="10" suffix="%" field_width="3"/>
-		<supplementary id="CAT:com:s860"/><!-- Complementaria:Cartell Recordi -->
+		<supplementary id="ES:com:s860"/><!-- Complementaria:Cartell Recordi -->
 <supplementary id="ES:com:s810"/><!-- Complementaria:En X m. -->
     </sign>
 
@@ -311,12 +311,12 @@ roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
         <tag key="oneway" value="no" ident="mode"/>
 		<tag key="lanes:forward" value="1" ident="mode"/>
 		<tag key="lanes:backward" value="1" ident="mode"/>
-		<supplementary id="CAT:com:s860"/><!-- Complementaria:Cartell Recordi -->
+		<supplementary id="ES:com:s860"/><!-- Complementaria:Cartell Recordi -->
 		    </sign>
 
 <sign ref="ES:p26" name="" es.name="Peligro desprendimientos" ca.name="">
         <tag key="natural" value="scree" ident="mode"/>
-		<supplementary id="CAT:com:s860"/><!-- Complementaria:Cartell Recordi -->
+		<supplementary id="ES:com:s860"/><!-- Complementaria:Cartell Recordi -->
 <supplementary id="ES:com:s810"/><!-- Complementaria:En X m. -->
 		    </sign>
 
@@ -354,7 +354,7 @@ roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
 
 <sign ref="ES:p34" name="" es.name="Peligro pavimento deslizante por hielo o nieve" ca.name="">
         <tag key="" value="" />
-		<supplementary id="CAT:com:s860"/><!-- Complementaria:Cartell Recordi -->
+		<supplementary id="ES:com:s860"/><!-- Complementaria:Cartell Recordi -->
 		    </sign>
 
 <sign ref="ES:p50" name="" es.name="Peligro indefinido" ca.name="">
@@ -393,9 +393,11 @@ roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
 
 <sign ref="ES:r100" name="" es.name="Circulación prohibida a todo tipo de vehículos" ca.name="">
         <tag key="access" value="no" ident="mode"/>
+		<supplementary id="ES:com:s860"/>
 		    </sign>
 
 <sign ref="ES:r101" name="" es.name="Dirección prohibida" ca.name="">
+<supplementary id="ES:com:s860"/>
         <tag key="" value="" />
 		    </sign> 
 <sign ref="ES:r102" name="" es.name="Prohibido vehículos con motor" ca.name="">
@@ -507,14 +509,14 @@ roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
 
 <sign ref="ES:r300" name="" es.name="Prohibido mantener una distancia más pequeña de" ca.name="">
         <tag key="" value="" />
-		<supplementary id="CAT:com:s860"/><!-- Complementaria:Cartell Recordi -->
+		<supplementary id="ES:com:s860"/><!-- Complementaria:Cartell Recordi -->
 		    </sign>
 
 <sign ref="ES:r301-50" name="" es.name="Prohibido ir a más de "  traffic_sign_tag="maxspeed" ca.name="">
 <tag key="maxspeed" value="$val"/>
         <parameter ident="val" input="textfield" prefix="" default="50" suffix="" field_width="3"/>
                 <tag key="traffic_sign" value="maxspeed" ident="mode"/>
-				<supplementary id="CAT:com:s860"/><!-- Complementaria:Cartell Recordi -->
+				<supplementary id="ES:com:s860"/><!-- Complementaria:Cartell Recordi -->
 				<supplementary id="ES:com:s870"/><!-- Complementaria:En la salida -->
 								    </sign>
 
@@ -542,12 +544,12 @@ roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
 		<tag key="traffic_sign" value="overtaking"/>
 	<tag key="side" value="$val5"/>
          <parameter ident="val5" input="textfield" prefix="" default="both" suffix="Lugar donde está la señal: ambos (both),derecha (right) o izquierda (both)" field_width="7"/>
-		<supplementary id="CAT:com:s860"/><!-- Complementaria:Cartell Recordi -->
+		<supplementary id="ES:com:s860"/><!-- Complementaria:Cartell Recordi -->
 		    </sign> 
 			
 <sign ref="ES:r306" name="" es.name="Prohibido adelantar camiones" ca.name="">
         <tag key="overtaking:hgv" value="no" ident="mode"/>
-		<supplementary id="CAT:com:s860"/><!-- Complementaria:Cartell Recordi -->
+		<supplementary id="ES:com:s860"/><!-- Complementaria:Cartell Recordi -->
 		    </sign>
 
 <sign ref="ES:r307" name="" es.name="Prohibida la parada.Hay que decir el lado de la calle left=izquierda | right=derecha " ca.name="">
@@ -966,7 +968,7 @@ roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
 		<tag key="turn:lanes:forward" value="through|through"/>
 		<tag key="minspeed:lanes:forward" value="$val|" ident="mode"/>
 <parameter ident="val" input="textfield" prefix="" default="30" suffix="" field_width="3"/>
-<supplementary id="CAT:com:s860"/><!-- Complementaria:Cartell Recordi -->
+<supplementary id="ES:com:s860"/><!-- Complementaria:Cartell Recordi -->
 </sign> 
 
 <sign ref="ES:s50e" name="" es.name="Continuación de carril para vehículos lentos en autopista" ca.name="">
@@ -976,7 +978,7 @@ roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
 		<tag key="turn:lanes:forward" value="through|through|through"/>
 		<tag key="minspeed:lanes:forward" value="$val|$val|" ident="mode"/>
 <parameter ident="val" input="textfield" prefix="" default="70" suffix="" field_width="3"/>
-<supplementary id="CAT:com:s860"/><!-- Complementaria:Cartell Recordi -->
+<supplementary id="ES:com:s860"/><!-- Complementaria:Cartell Recordi -->
 </sign> 
 
 <sign ref="ES:s51" name="" es.name="Parada de bus" ca.name="">
@@ -1502,8 +1504,14 @@ roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
 <sign ref="ES:s500" traffic_sign_tag="city_limit" name="" es.name="Límite de población" ca.name="Entrada a la població">
         <tag key="traffic_sign" value="city_limit"/>
 		<tag key="name" value="$val"/>
-        <parameter input="textfield" name="" es.name="nombre_población" ca.name="Maximale Steigung" type="int" ident="val" default="Los Corrales de Buelna" suffix="" field_width="12"/>
+        <parameter input="textfield" name="" es.name="nombre_población" ca.name="Maximale Steigung" type="int" ident="val" default="nom_ciutat" suffix="" field_width="12"/>
 		    </sign>
+			
+	<sign ref="ES:s500b" traffic_sign_tag="city_limit" ident="location:traffic_sign" name="" es.name="Segundo panel de Límite de población " ca.name="Segon panell d'entrada a la població">
+<tag key="panels" value="2"/>
+<tag key="name:b" value="$val"/>
+<parameter input="textfield" name="" es.name="nombre_población" ca.name="nom_ciutat" type="int" ident="val" default="Castellet" suffix="" field_width="12"/>
+</sign>
 
 <sign ref="ES:s510" name="" es.name="Fin de límite de población" ca.name="Fi de població">        <tag key="name" value="$val"/>
         <parameter input="textfield" name="" es.name="nombre_población" ca.name="Maximale Steigung" type="int" ident="val" default="Los Corrales de Buelna" suffix="" field_width="12"/>
@@ -1511,11 +1519,27 @@ roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
 			
 <sign ref="ES:s520" name="" es.name="Punto importante en la vía" ca.name="Punt important a la via">        
 <tag key="name" value="$val"/>
-        <parameter input="textfield" name="" es.name="punto_via" ca.name="punt_via" type="int" ident="val" default="puerto de Navacerrada" suffix="" field_width="12"/>
-		<tag key="mountain_pass" value="yes"/>
-		<tag key="ele" value="$val2"/>
-        <parameter input="textfield" name="" es.name="altura" ca.name="alçada" type="int" ident="val" default="1700" suffix="m" field_width="12"/>
+<parameter input="textfield" name="" es.name="punto_via" ca.name="punt_via" type="int" ident="val" default="puerto de Navacerrada" suffix="" field_width="12"/>
+<tag key="mountain_pass" value="$val2"/>
+<parameter ident="val2" input="textfield" prefix="" default="" suffix="És port de muntanya?" field_width="10"/>
+<tag key="ele" value="$val3"/>
+        <parameter input="textfield" name="" es.name="altura" ca.name="alçada" type="int" ident="val3" default="1700" suffix="m" field_width="12"/>
+<tag key="destination:sign" value="$val4"/>
+<parameter ident="val4" input="textfield" prefix="" default="" suffix="Símbol" field_width="10"/>
 		    </sign>
+			
+<sign ref="CAT:s520" name="" es.name="Punto importante en la vía (Catalunya)" ca.name="Punt important a la via (Catalunya)">        
+<tag key="name" value="$val"/>
+<parameter input="textfield" name="" es.name="punto_via" ca.name="punt_via" type="int" ident="val" default="Lloc Bonic" suffix="" field_width="12"/>
+<tag key="panels" value="$val2"/>
+<parameter ident="val2" input="textfield" prefix="" default="2" suffix="Quants panels? Esborra el número si només 1" field_width="10"/>
+<tag key="distance" value="$val3"/>
+<parameter input="textfield" name="" es.name="distancia" ca.name="distància" type="int" ident="val3" default="100 m" suffix="Distancia" field_width="12"/>
+<tag key="destination:sign" value="$val4"/>
+<parameter ident="val4" input="textfield" prefix="" default="" suffix="Símbol" field_width="10"/>
+<tag key="turn:destination:b" value="$val5"/>
+<parameter ident="val5" input="textfield" prefix="" default="left" suffix=" direcció fletxa" field_width="20"/>
+</sign>
 			
 <sign ref="ES:s540" name="" es.name="Límite administrativo" ca.name="Límit administratiu">        
 <tag key="boundary" value="administrative"/>
@@ -1877,33 +1901,35 @@ roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
         <parameter ident="val4" input="textfield" prefix="" default="slight_right" suffix=" direcció fletxa" field_width="20"/>
 		    </sign>
 			
+
+			
 <sign ref="CAT:s600" name="" es.name="Confirmación de dirección vía y distancia (CAT)" ca.name="Confirmació de direcció , via i distància (Catalunya)">
 	
 <tag key="destination:1" value="$val"/>
 <parameter ident="val" input="textfield" prefix="" default="" suffix="Direcció posició 1" field_width="30"/>
 <tag key="distance:1" value="$val2"/>
 <parameter ident="val2" input="textfield" prefix="" default="" suffix="Distància posició 1" field_width="10"/>
-<tag key="destination:sign:1" value="$val4"/>
-<parameter ident="val4" input="textfield" prefix="" default="" suffix="Símbol posició 1" field_width="10"/>
+<tag key="destination:sign:1" value="$val3"/>
+<parameter ident="val3" input="textfield" prefix="" default="" suffix="Símbol posició 1" field_width="10"/>
 
-<tag key="destination" value="$val6" />
-<parameter ident="val6" input="textfield" prefix="" default="Lleida" suffix="Direcció posició 2" field_width="30"/>
-<tag key="distance" value="$val7"/>
-<parameter ident="val7" input="textfield" prefix="" default="3" suffix="Distància posició 2" field_width="10"/>
-<tag key="destination:sign" value="$val9"/>
-<parameter ident="val9" input="textfield" prefix="" default="" suffix="Símbol posició 2" field_width="10"/>
+<tag key="destination" value="$val4" />
+<parameter ident="val4" input="textfield" prefix="" default="Lleida" suffix="Direcció posició 2" field_width="30"/>
+<tag key="distance" value="$val5"/>
+<parameter ident="val5" input="textfield" prefix="" default="3" suffix="Distància posició 2" field_width="10"/>
+<tag key="destination:sign" value="$val6"/>
+<parameter ident="val6" input="textfield" prefix="" default="" suffix="Símbol posició 2" field_width="10"/>
 
-<tag key="destination:3" value="$val10" />
-<parameter ident="val10" input="textfield" prefix="" default="" suffix="Direcció posició 3" field_width="30"/>
-<tag key="distance:3" value="$val11" />
-<parameter ident="val11" input="textfield" prefix="" default="" suffix="Distància posició 3" field_width="10"/>
-<tag key="destination:sign:3" value="$val13"/>
-<parameter ident="val13" input="textfield" prefix="" default="" suffix="Símbol posició 3" field_width="10"/>
+<tag key="destination:3" value="$val7" />
+<parameter ident="val7" input="textfield" prefix="" default="" suffix="Direcció posició 3" field_width="30"/>
+<tag key="distance:3" value="$val8" />
+<parameter ident="val8" input="textfield" prefix="" default="" suffix="Distància posició 3" field_width="10"/>
+<tag key="destination:sign:3" value="$val9"/>
+<parameter ident="val9" input="textfield" prefix="" default="" suffix="Símbol posició 3" field_width="10"/>
 
-<tag key="destination:ref" value="$val8" ident="location:ref"/>
-<parameter ident="val8" input="textfield" prefix="" default="" suffix="Referència" field_width="10"/>
-<tag key="ref:colour" value="$val3" ident="location:ref"/>
-<parameter ident="val3" input="textfield" prefix="" default="" suffix="Color referència" field_width="10"/>
+<tag key="destination:ref" value="$val10"/>
+<parameter ident="val10" input="textfield" prefix="" default="" suffix="Referència" field_width="10"/>
+<tag key="ref:colour" value="$val11"/>
+<parameter ident="val11" input="textfield" prefix="" default="" suffix="Color referència" field_width="10"/>
 <supplementary id="ES:com:s800"/>
 </sign>
 
@@ -2043,14 +2069,18 @@ roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
 
 <!-- Aquí comencen les suplementàries -->
 
-		<sign ref="CAT:com:s860" supplementary="yes" name="" es.name="Mensaje" ca.name="Missatge">
-        <tag key="name"  value="$val10"/>
-        <parameter ident="val10" input="textfield" prefix="" default="RECORDI" suffix="" field_width="10"/>
+		<sign ref="ES:com:s860"  traffic_sign_tag="" supplementary="yes" name="" es.name="Mensaje" ca.name="Missatge">
+        <tag key="description"  value="$val10"/>
+        <parameter ident="val10" input="textfield" prefix="" default="Excepte veïns" suffix="" field_width="10"/>
+		        <tag key="description:b"  value="$val11"/>
+        <parameter ident="val11" input="textfield" prefix="Mensaje segundo panel" default="" suffix="" field_width="10"/>
     </sign> 
 	
-	<sign ref="ES:com:s870" traffic_sign_tag="" name="" es.name="En la salida.Especificar en qué dirección señala la flecha.Recuerda!! quita las comas que salgan en el campo traffic_sign" ca.name="A la sortida.Especificar en quina direcció assenyala la fletxa.Treu les comes que surtin al camp traffic_sign">
+	<sign ref="ES:com:s870" traffic_sign_tag="" name=""  supplementary="yes" es.name="Especificar en qué dirección señala la flecha.Recuerda!! quita las comas que salgan en el campo traffic_sign" ca.name="Especificar en quina direcció assenyala la fletxa.Treu les comes que surtin al camp traffic_sign">
         <tag key="turn:destination:traffic_sign"  value="$val10"/>
         <parameter ident="val10" input="textfield" prefix="" default="slight_right" suffix="" field_width="10"/>
+		<tag key="turn:destination:traffic_sign:b"  value="$val11"/>
+        <parameter ident="val11" input="textfield" prefix="Dirección segundo panel" default="" suffix="" field_width="10"/>
     </sign> 
 	
 		<sign ref="ES:com:s850" supplementary="yes" name="" es.name="Dirección de la preferencia" ca.name="Direcció de la preferència">
@@ -2069,9 +2099,9 @@ roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
         <tag key="turn:lanes:forward"  value="slight_right"/>
     </sign> 
 	
-<sign ref="ES:com:s840" supplementary="yes" name="" es.name="STOP A X m." ca.name="STOP A X m.">
-  <tag key="distance"  value="$val10 m"/>
-  <parameter ident="val10" input="textfield" prefix="" default="150" suffix="" field_width="3"/>
+<sign ref="ES:com:s840" traffic_sign_tag="" supplementary="yes" name="" es.name="STOP A X m." ca.name="STOP A X m.">
+  <tag key="distance:cross"  value="$val10 m"/>
+  <parameter ident="val10" input="textfield" prefix="" default="150 m" suffix="" field_width="3"/>
     </sign> 
 	
 	<sign ref="ES:com:s820" supplementary="yes" name="" es.name="En x. m. a la izquierda" ca.name="En x. m. a l'esquerra">
@@ -2091,51 +2121,53 @@ roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
   <parameter ident="val11" input="textfield" prefix="" default="25" suffix="" field_width="3"/>
     </sign> 
 	
-			<sign ref="ES:com:s800" traffic_sign_tag="" name="" es.name="A x. m. Poner la m al final para indicar metros " ca.name="A x. m. Posar la m al final per indicar metres">
+			<sign ref="ES:com:s800" traffic_sign_tag="" supplementary="yes" name="" es.name="A x. m. Poner la m al final para indicar metros " ca.name="A x. m. Posar la m al final per indicar metres">
   <tag key="distance"  value="$val10"/>
   <parameter ident="val10" input="textfield" prefix="" default="150 m" suffix="" field_width="4"/>
     <tag key="distance:b"  value="$val11"/>
   <parameter ident="val11" input="textfield" prefix="Distancia segundo panel" default="" suffix="" field_width="4"/>
     </sign> 
 	
-				<sign ref="ES:com:s810" supplementary="yes" name="" es.name="En x. m. " ca.name="En x. m. ">
+				<sign ref="ES:com:s810" traffic_sign_tag=""  supplementary="yes" name="" es.name="En x. m. " ca.name="En x. m. ">
   <tag key="length"  value="$val10"/>
   <parameter ident="val10" input="textfield" prefix="" default="4025" suffix="" field_width="5"/>
+    <tag key="length:b"  value="$val11"/>
+  <parameter ident="val11" input="textfield" prefix="Longitud segundo panel" default="" suffix="" field_width="5"/>
     </sign> 
 			
-<sign ref="ES:panel:dir:left" name="" es.name="Curva peligrosa izquierda autopista" ca.name="Corba perillosa a l'esquerra autopista">
+<sign ref="ES:panel:dir:left" supplementary="yes" name="" es.name="Curva peligrosa izquierda autopista" ca.name="Corba perillosa a l'esquerra autopista">
  <tag key="" value=""/>
     </sign>
 			
-<sign ref="ES:panel:dir:left:2" name="" es.name="Curva peligrosa izquierda carretera" ca.name="Corba perillosa a l'esquerra carretera">
+<sign ref="ES:panel:dir:left:2" supplementary="yes"  name="" es.name="Curva peligrosa izquierda carretera" ca.name="Corba perillosa a l'esquerra carretera">
  <tag key="" value=""/>
 </sign>
 			
-<sign ref="ES:panel:dir:left:3" name="" es.name="Curva peligrosa izquierda local" ca.name="Corba perillosa a l'esquerra local">
+<sign ref="ES:panel:dir:left:3" supplementary="yes"  name="" es.name="Curva peligrosa izquierda local" ca.name="Corba perillosa a l'esquerra local">
 <tag key="" value=""/>
 </sign>
 			
-<sign ref="ES:panel:dir:right" name="" es.name="Curva peligrosa derecha autopista" ca.name="Corba perillosa a la dreta autopista">
+<sign ref="ES:panel:dir:right" supplementary="yes"  name="" es.name="Curva peligrosa derecha autopista" ca.name="Corba perillosa a la dreta autopista">
  <tag key="" value=""/>
     </sign>
 			
-<sign ref="ES:panel:dir:right:2" name="" es.name="Curva peligrosa derecha carretera" ca.name="Corba perillosa a la dreta carretera">
+<sign ref="ES:panel:dir:right:2" supplementary="yes"  name="" es.name="Curva peligrosa derecha carretera" ca.name="Corba perillosa a la dreta carretera">
  <tag key="" value=""/>
 </sign>
 			
-<sign ref="ES:panel:dir:right:3" name="" es.name="Curva peligrosa derecha local" ca.name="Corba perillosa a la dreta local">
+<sign ref="ES:panel:dir:right:3" supplementary="yes"  name="" es.name="Curva peligrosa derecha local" ca.name="Corba perillosa a la dreta local">
 <tag key="" value=""/>
 </sign>
 
-<sign ref="ES:panel:light" name="" es.name="Panel informativo luminoso" ca.name="Panell informatiu il·luminat">
+<sign ref="ES:panel:light" supplementary="yes"  name="" es.name="Panel informativo luminoso" ca.name="Panell informatiu il·luminat">
 <tag key="" value=""/>
 </sign>
 
-<sign ref="ES:road:beacon:big" name="" es.name="Hito de vértice" ca.name="Fita de vèrtex">
+<sign ref="ES:road:beacon:big" supplementary="yes"  name="" es.name="Hito de vértice" ca.name="Fita de vèrtex">
 <tag key="" value=""/>
 </sign>
 
-<sign ref="ES:road:beacon:little" name="" es.name="Hito abatible" ca.name="Fita abatible">
+<sign ref="ES:road:beacon:little" supplementary="yes"  name="" es.name="Hito abatible" ca.name="Fita abatible">
 <tag key="" value=""/>
 </sign>
 
