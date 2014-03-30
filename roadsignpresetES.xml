@@ -559,6 +559,7 @@ roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
 <supplementary id="ES:com:s820"/><!-- Complementaria:En la izquierda -->
 <supplementary id="ES:com:s821"/><!-- Complementaria:En la derecha -->
 <supplementary id="ES:com:s830"/><!-- Complementaria:A ambos lados -->
+<supplementary id="ES:com:s870"/><!-- Complementaria:de aquí a aquí -->
 		    </sign> 
 
 <sign ref="ES:r308" name="" es.name="Prohibido el estacionamento.Hay que decir el lado de la calle left=izquierda | right=derecha" ca.name="">
@@ -567,6 +568,7 @@ roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
 		<supplementary id="ES:com:s820"/><!-- Complementaria:En la izquierda -->
 <supplementary id="ES:com:s821"/><!-- Complementaria:En la derecha -->
 <supplementary id="ES:com:s830"/><!-- Complementaria:A ambos lados -->
+				<supplementary id="ES:com:s870"/><!-- Complementaria:de aquí a aquí -->
 		    </sign> 
 
 	<sign ref="ES:r308a" name="" es.name="Prohibido el estacionamento los días impares" ca.name="">
@@ -2078,9 +2080,9 @@ roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
 	
 	<sign ref="ES:com:s870" traffic_sign_tag="" name=""  supplementary="yes" es.name="Especificar en qué dirección señala la flecha.Recuerda!! quita las comas que salgan en el campo traffic_sign" ca.name="Especificar en quina direcció assenyala la fletxa.Treu les comes que surtin al camp traffic_sign">
         <tag key="turn:destination:traffic_sign"  value="$val10"/>
-        <parameter ident="val10" input="textfield" prefix="" default="slight_right" suffix="" field_width="10"/>
+        <parameter ident="val10" input="textfield" prefix="Borrar este para señales laterales" default="slight_right" suffix="" field_width="10"/>
 		<tag key="turn:destination:traffic_sign:b"  value="$val11"/>
-        <parameter ident="val11" input="textfield" prefix="Dirección segundo panel" default="" suffix="" field_width="10"/>
+        <parameter ident="val11" input="textfield" prefix="Dirección segundo panel.Escoge este para señales laterales.Borra el otro" default="" suffix="" field_width="10"/>
     </sign> 
 	
 		<sign ref="ES:com:s850" supplementary="yes" name="" es.name="Dirección de la preferencia" ca.name="Direcció de la preferència">
@@ -2136,39 +2138,48 @@ roadsigns plugin preset file for Spain yopaseopor http://yopaseopor.blogspot.com
     </sign> 
 			
 <sign ref="ES:panel:dir:left" supplementary="yes" name="" es.name="Curva peligrosa izquierda autopista" ca.name="Corba perillosa a l'esquerra autopista">
- <tag key="" value=""/>
+  <tag key="panels"  value="$val10"/>
+  <parameter ident="val10" input="textfield" prefix="" default="" suffix="Escribe un 2 si quieres un segundo panel" field_width="5"/>
     </sign>
 			
 <sign ref="ES:panel:dir:left:2" supplementary="yes"  name="" es.name="Curva peligrosa izquierda carretera" ca.name="Corba perillosa a l'esquerra carretera">
- <tag key="" value=""/>
+  <tag key="panels"  value="$val10"/>
+  <parameter ident="val10" input="textfield" prefix="" default="" suffix="Escribe un 2 si quieres un segundo panel" field_width="5"/>
 </sign>
 			
 <sign ref="ES:panel:dir:left:3" supplementary="yes"  name="" es.name="Curva peligrosa izquierda local" ca.name="Corba perillosa a l'esquerra local">
-<tag key="" value=""/>
+  <tag key="panels"  value="$val10"/>
+  <parameter ident="val10" input="textfield" prefix="" default="" suffix="Escribe un 2 si quieres un segundo panel" field_width="5"/>
 </sign>
 			
 <sign ref="ES:panel:dir:right" supplementary="yes"  name="" es.name="Curva peligrosa derecha autopista" ca.name="Corba perillosa a la dreta autopista">
- <tag key="" value=""/>
+  <tag key="panels"  value="$val10"/>
+  <parameter ident="val10" input="textfield" prefix="" default="" suffix="Escribe un 2 si quieres un segundo panel" field_width="5"/>
     </sign>
 			
 <sign ref="ES:panel:dir:right:2" supplementary="yes"  name="" es.name="Curva peligrosa derecha carretera" ca.name="Corba perillosa a la dreta carretera">
- <tag key="" value=""/>
+  <tag key="panels"  value="$val10"/>
+  <parameter ident="val10" input="textfield" prefix="" default="" suffix="Escribe un 2 si quieres un segundo panel" field_width="5"/>
 </sign>
 			
 <sign ref="ES:panel:dir:right:3" supplementary="yes"  name="" es.name="Curva peligrosa derecha local" ca.name="Corba perillosa a la dreta local">
-<tag key="" value=""/>
+  <tag key="panels"  value="$val10"/>
+  <parameter ident="val10" input="textfield" prefix="" default="" suffix="Escribe un 2 si quieres un segundo panel" field_width="5"/>
 </sign>
 
 <sign ref="ES:panel:light" supplementary="yes"  name="" es.name="Panel informativo luminoso" ca.name="Panell informatiu il·luminat">
-<tag key="" value=""/>
+  <tag key="panels"  value="$val10"/>
+  <parameter ident="val10" input="textfield" prefix="" default="" suffix="Escribe un 2 si quieres un segundo panel" field_width="5"/>
 </sign>
 
 <sign ref="ES:road:beacon:big" supplementary="yes"  name="" es.name="Hito de vértice" ca.name="Fita de vèrtex">
-<tag key="" value=""/>
+  <tag key="panels"  value="$val10"/>
+  <parameter ident="val10" input="textfield" prefix="" default="" suffix="Escribe un 2 si quieres un segundo panel" field_width="5"/>
 </sign>
 
 <sign ref="ES:road:beacon:little" supplementary="yes"  name="" es.name="Hito abatible" ca.name="Fita abatible">
-<tag key="" value=""/>
+  <tag key="panels"  value="$val10"/>
+  <parameter ident="val10" input="textfield" prefix="" default="" suffix="Escribe un 2 si quieres un segundo panel" field_width="5"/>
 </sign>
 
 <sign ref="ES:s225" traffic_sign_tag="ES:s225" name="" es.name="Direcciones en salida de autopista 1" ca.name="Direccions en sortida d'autopista 1">
